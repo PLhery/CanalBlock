@@ -1,0 +1,22 @@
+{
+   "background": {
+      "scripts": [ "background.js" ],
+	  "persistent": true
+   },
+   "content_scripts": [ {
+      "js": ["adBlock.js" ],
+      "matches": [ "http://www.canalplus.fr/*" ]
+   }],
+   "description": "Supprimez les pubs canal",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png"
+   },
+   "web_accessible_resources": [
+    "ressources/*"
+   ],
+   "manifest_version": 2,
+   "name": "CanalBlock",
+   "permissions": [ "http://www.canalplus.fr/*","http://fr-canalplus.videoplaza.tv/*","webRequest","webRequestBlocking" ],
+   "version": "1.0"
+}
