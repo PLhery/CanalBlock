@@ -6,6 +6,7 @@ LICENSE : Apache V2.
 
 ==========
 INSTALLATION : 
+- sur https://chrome.google.com/webstore/detail/canalblock/pmfiidlmhkgloocnlnomcgfdgpoabigo
 
 - via le .crx à télecharger sur https://github.com/MrPointVirgule/CanalBlock/releases/ puis à glisser dans chrome://extensions/
 
