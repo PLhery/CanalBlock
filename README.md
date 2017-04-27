@@ -2,7 +2,7 @@ CanalBlock
 ==========
 Bloque les pubs du site canal+, et rend le chargement plus rapide
 
-LICENSE : Apache V2.
+LICENCE : Apache V2.
 
 ==========
 INSTALLATION : 

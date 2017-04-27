@@ -1,22 +1,37 @@
 {
-   "background": {
-      "scripts": [ "background.js" ],
-	  "persistent": true
-   },
-   "content_scripts": [ {
-      "js": ["adBlock.js" ],
-      "matches": [ "http://www.canalplus.fr/*" ]
-   }],
-   "description": "Supprimez les pubs canal",
-   "icons": {
-      "128": "icon128.png",
-      "16": "icon16.png"
-   },
-   "web_accessible_resources": [
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "adBlock.js"
+      ],
+      "matches": [
+        "http://www.canalplus.fr/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "description": "Supprimez les pubs canal",
+  "icons": {
+    "128": "icon128.png",
+    "16": "icon16.png"
+  },
+  "web_accessible_resources": [
     "ressources/*"
-   ],
-   "manifest_version": 2,
-   "name": "CanalBlock",
-   "permissions": [ "http://www.canalplus.fr/*","http://fr-canalplus.videoplaza.tv/*","webRequest","webRequestBlocking" ],
-   "version": "1.0"
+  ],
+  "manifest_version": 2,
+  "name": "CanalBlock",
+  "permissions": [
+    "*://static.canal-plus.net/pub/*",
+    "*://broadcast.pm/*",
+    "*://*.piximedia.fr/*",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "version": "1.1"
 }

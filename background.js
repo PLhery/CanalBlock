@@ -1,13 +1,12 @@
 chrome.webRequest.onBeforeRequest.addListener(function (request) {
-	if(request.url.indexOf("distributor") > -1) { //pub = on bloque
-		return {cancel: true}; 
-	} else if(request.url.indexOf("vp_player") > -1) { //ressources lentes = on redirige vers les locales
+	if(request.url.indexOf("piximedia.fr") > -1 || request.url.indexOf("broadcast.pm") > -1) { //banniere pub = on bloque
+		return {cancel: true};
+	} else if(request.url.indexOf("static.canal-plus.net/pub/") > -1) { //vidéo pub = on redirige vers vidéo vide
 		return {
-            redirectUrl: chrome.extension.getURL('ressources/as3_vp_player_2.4.15.23.1.swf')
+            redirectUrl: chrome.extension.getURL('ressources/empty.mp4')
         };
 	}
         
 }, {
-    urls: ["http://fr-canalplus.videoplaza.tv/proxy/distributor/*", 
-	"http://fr-canalplus.videoplaza.tv/proxy/as3_vp_player" ]
+    urls: ["*://static.canal-plus.net/pub/*", "*://broadcast.pm/*", "*://*.piximedia.fr/*" ]
 }, ["blocking"]); 
