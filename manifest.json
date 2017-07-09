@@ -30,8 +30,17 @@
     "*://static.canal-plus.net/pub/*",
     "*://broadcast.pm/*",
     "*://*.piximedia.fr/*",
+    "*://*.2mdn.net/*",
+    "*://www.wat.tv/get/externalpubhigh/*",
+    "*://slpubmedias.tf1.fr/*",
+    "*://*.fwmrm.net/*",
+    "*://*.nuggad.net/*",
+    "*://*.revsci.net/*",
+    "*://openad.tf1.fr/*",
+    "*://*.churccivic.com/*",
+    "*://*.adsafeprotected.com/*",
     "webRequest",
     "webRequestBlocking"
   ],
-  "version": "1.1"
+  "version": "1.2"
 }

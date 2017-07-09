@@ -1,6 +1,6 @@
 CanalBlock
 ==========
-Bloque les pubs du site canal+, et rend le chargement plus rapide
+Bloque les pubs du site canal+ et mytf1, et rend le chargement plus rapide
 
 LICENCE : Apache V2.
 
